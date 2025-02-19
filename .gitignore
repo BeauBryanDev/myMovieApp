@@ -130,5 +130,5 @@ dist
 .pnp.*
 
 #Secrects.js (API_KEY )  :
-./secrects.js
+secrects.js
 
