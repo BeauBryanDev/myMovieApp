@@ -1,0 +1,24 @@
+{
+  "name": "my_movie_app",
+  "version": "1.0.0",
+  "description": "show movies through the web ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BeauBryanDev/myMovieApp.git"
+  },
+  "keywords": [
+    "movies",
+    "displaymovie",
+    "fetch"
+  ],
+  "author": "@BryanDevBoy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BeauBryanDev/myMovieApp/issues"
+  },
+  "homepage": "https://github.com/BeauBryanDev/myMovieApp#readme"
+}
