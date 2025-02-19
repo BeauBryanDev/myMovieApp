@@ -130,6 +130,5 @@ dist
 .pnp.*
 
 #Secrects.js (API_KEY )  :
-
-myMovieApp/src/secrects.js
+src/secrects.js
 
