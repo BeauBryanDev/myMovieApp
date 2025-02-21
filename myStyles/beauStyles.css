@@ -1,9 +1,369 @@
-body {
+* {
 
     background-color: brown;
-    width: 100%;
-    height: 100%;
+    margin: 0;
 
 }
 
+:root {
 
+    --main-brown : brown ;
+    --content-brown : #9B3922 ;
+    --dark-orange: darkorange;
+    --aux-brown    : #481e16 ; 
+    --borders    :  #1a121b ; 
+
+    
+    --font-family-titles: 'Dosis', sans-serif;
+    --font-family-text: 'Red Hat Display', sans-serif;
+    --font-weight-title1: 800;
+    --font-weight-title2: 700;
+    --font-weight-text1: 400;
+    --font-weight-text2: 500;
+
+}
+
+html {
+
+    background-color:  var( --main-brown );
+
+}
+
+body  {
+
+    background-color:  var( var(--content-brown) );
+    color : var( --borders ) ; 
+    font-family: var( --font-family-text);
+    font-weight: var(--font-weight-text1);
+    font-size: 16px;
+    margin:  8px 2px 2px 4px ;
+
+}
+
+h1, h2, h3 {
+    margin : 0;
+    padding:  0;
+
+}
+
+h2, h3 {
+    font-size: 24px;
+    color : var(--aux-brown);
+    font-family: var(--font-family-titles);
+    font-weight: var(--font-weight-title1);
+    margin: 0;
+    padding: 0;
+
+}
+
+h3 {
+    color : var(--content-brown);
+    font-weight: var(--font-weight-text2);
+    font-size: 12px;
+
+}
+
+input {
+
+    background-color: antiquewhite;
+    color: var(--borders);
+    border: none;
+    font-size: 18px;
+    padding-left: 15px;
+
+}
+
+input:placeholder {
+
+    color: lightcoral;
+    font-family: var(--font-family-text);
+
+}
+
+button {
+
+    background-color: var(--aux-brown);
+    border: none;
+    color: coral;
+    font-weight: var(--font-weight-text2);
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.header-container .trendingFilm-container  .filmsCats-container {
+
+    padding: 0 24px;
+
+}
+
+.trendingFilm-container .filmCats-title {
+    
+    margin-bottom: 24px;
+
+}
+
+.movie-container {
+    
+    cursor: pointer;
+
+}
+
+.movie-img .movie-pic {
+
+    border-radius: 10px;
+    height: 200px;
+    width: 160px;
+
+}
+
+.categories-list .cat-list {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+
+}
+
+.header-container {
+
+    padding-top : 42px;
+
+}
+
+.header-container--long {
+
+    background-image:  url('https://www.themoviedb.org/t/p/w600_and_h900_bestv2/d8Ryb8AunYAuycVKDp5HpdWPKgC.jpg');
+    background : linear-gradient( 90deg,  rgba(0, 0, 0, 0.45) 20% , rgba(0, 0, 0, 0) 30% );
+    background-size:  cover !important;
+    height: 400px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+.header-container--cat__view {
+
+    background:  linear-gradient(180deg, rgba(238, 204, 117, 0.5) 0%, rgba(238, 204, 117, 0) 72.92%);
+
+}
+
+.header-title {
+
+    margin-bottom: 16px;
+
+}
+
+.header-arrow {
+
+    font-weight: var(--font-weight-text2);
+    font-size: 40px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+.header-arrow--white {
+    color: var(--dark-orange);
+
+}
+
+.header-search--form input  {
+
+    height: 48px;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.header-search--form button {
+
+    width: 60px;
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.trendingFilm-btn {
+
+    /*overflow-x: scroll;
+    /*overflow-y: hidden;
+    /*white-space: nowrap;*/
+    height: 240px;
+    padding-left: 24px;
+    padding-bottom: 16px;
+
+}
+
+.trendingFilm-movie--list .movie-container {
+
+    display:  inline-block;
+    margin-right: 10px;
+
+}
+
+.trendingFilm-movie--list .movie-container .movie-img .movie-pic {
+
+    height: 225px;
+    min-height: 220px;
+    max-width: 230px;
+    width: 160px;
+    min-width : 150px;
+    max-width : 165px;
+
+}
+
+.cat-container {
+    width: 45%;
+
+}
+
+.cat-title {
+
+    margin-bottom: 10px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--borders);
+    font-size: 20px;
+
+
+
+}
+
+.category-title::before {
+    content: '••••';
+    color: transparent;
+    background-color: var(--idColor);
+    border-radius: 8px;
+    margin-right: 8px;
+    width: 8px;
+    height: 8px;
+
+  }
+
+#id28 { color: cyan; }
+#id12 {  color: lightblue; }
+#id16 { color: blue; }
+#id35 { color: blueviolet; }
+#id80 { color: yellowgreen; }
+#id99 { color: gray; }
+#id18 { color: pink; }
+#id10751 { color: coral; }
+#id14 { color: red; }
+#id36 { color: purple; }
+#id27 { color: tomato; }
+#id10402 { color: salmon; }
+#id9648 { color: green; }
+#id10749 { color: lightgreen; }
+#id878 { color: black; }
+#id10770 { color: lightcoral; }
+#id53 { color: chartreuse; }
+#id10752 { color: teal; }
+#id37 { color: goldenrod; }
+
+
+.gral-container .movie-container  {
+
+    display: inline-block;
+    width: 48%;
+
+}
+
+.gral-list-container .movie-pic .movie-img {
+
+    width: 100%;
+
+}
+
+  /* Movie Detail */
+.movieInfo-container {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 32px 24px;
+    margin-top: 403px;
+    z-index: 1;
+    position: absolute;
+    background-color: coral;
+
+  }
+  
+  .movieInfo-title {
+    display: inline-block;
+    width: 80%;
+    margin: 0 0 16px 0;
+    padding: 0;
+  }
+  
+  .movieRating {
+    display: inline-block;
+    text-align: right;
+    width: 18%;
+    font-weight: var(--font-weight-title2);
+  }
+  .movieRating::before {
+    content: '★';
+    color: var(--yellow);
+    padding-right: 4px;
+  }
+  
+  .movieInfo--description {
+    margin: 0 0 24px 0;
+  }
+  
+  .relatedMovies-container {
+    margin-top: 24px;
+    height: 216px;
+  }
+  
+  .relatedMovies-title {
+    margin-bottom: 16px;
+  }
+  
+  .relatedMovies-scrollContainer {
+    position: absolute;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: calc(100vw - 24px);
+    padding-bottom: 16px;
+  }
+  
+  .relatedMovies-scrollContainer .movie-container {
+    display: inline-block;
+    margin-right: 8px;
+  }
+  
+  .relatedMovies-scrollContainer .movie-img {
+    width: 125px;
+    min-width: 125px;
+    max-width: 125px;
+    height: 187.5px;
+    min-height: 187.5px;
+    max-height: 187.5px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--aux-brown);
+    color: coral ;
+    text-align: center;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Navigation
+  .inactive {
+    display: none;
+
+}
+ */
