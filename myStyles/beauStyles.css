@@ -1,6 +1,7 @@
 * {
 
     background-color: brown;
+    box-sizing: border-box;
     margin: 0;
 
 }
@@ -31,12 +32,12 @@ html {
 
 body  {
 
-    background-color:  var( var(--content-brown) );
+    background-color:  var(--content-brown) ;
     color : var( --borders ) ; 
     font-family: var( --font-family-text);
     font-weight: var(--font-weight-text1);
     font-size: 16px;
-    margin:  8px 2px 2px 4px ;
+    margin:  4px 2px 2px 4px ;
 
 }
 
@@ -59,17 +60,34 @@ h2, h3 {
 h3 {
     color : var(--content-brown);
     font-weight: var(--font-weight-text2);
-    font-size: 12px;
+    font-size: 15px;
 
+}
+
+.header-container {
+
+    position: relative;
+    
+    place-items: center;
+   
+}
+
+.main-header--title {
+    
+    padding-top: 10px;
+    padding-bottom : 10px;
+    
+    
 }
 
 input {
 
     background-color: antiquewhite;
     color: var(--borders);
-    border: none;
+    border: 5px solid black;
     font-size: 18px;
     padding-left: 15px;
+    border-radius: 20pz;
 
 }
 
@@ -83,21 +101,28 @@ input:placeholder {
 button {
 
     background-color: var(--aux-brown);
-    border: none;
+    border: 5px solid black;
     color: coral;
     font-weight: var(--font-weight-text2);
     font-size: 16px;
     cursor: pointer;
+    place-self: start;
 
 }
 
 .header-container .trendingFilm-container  .filmsCats-container {
 
-    padding: 0 24px;
+    padding: 0px 24px;
 
 }
 
-.trendingFilm-container .filmCats-title {
+.filmsCats-container  .filmsCats-container , footer {
+    
+    margin-top : 45px;
+
+}
+
+.trendingFilms-header .filmCats-title {
     
     margin-bottom: 24px;
 
@@ -109,7 +134,7 @@ button {
 
 }
 
-.movie-img .movie-pic {
+.movie-img, .movie-pic {
 
     border-radius: 10px;
     height: 200px;
@@ -167,48 +192,69 @@ button {
 
 }
 
-.header-arrow--white {
+.header-arrow--black {
     color: var(--dark-orange);
 
+}
+
+.header-search--form {
+
+    display: flex;
 }
 
 .header-search--form input  {
 
     height: 48px;
     width: 100%;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
 
 }
 
 .header-search--form button {
 
-    width: 60px;
+    width: 120px;
     height: 50px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
 
 }
 
-.trendingFilm-btn {
+.trendingFilms-header {
 
-    /*overflow-x: scroll;
-    /*overflow-y: hidden;
-    /*white-space: nowrap;*/
+    display : flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.trending__Film-btn {
+
+    border-radius: 8px;
+    height: 32px;
+    width: 72px;
+
+}
+
+.trending__Film-movieList {
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
     height: 240px;
     padding-left: 24px;
     padding-bottom: 16px;
 
 }
 
-.trendingFilm-movie--list .movie-container {
+.trending__Film-movieList .movie-container {
 
     display:  inline-block;
     margin-right: 10px;
 
 }
 
-.trendingFilm-movie--list .movie-container .movie-img .movie-pic {
+.trending__Film-movieList .movie-container .movie-img .movie-pic {
 
     height: 225px;
     min-height: 220px;
@@ -232,13 +278,11 @@ button {
     overflow: hidden;
     text-overflow: ellipsis;
     color: var(--borders);
-    font-size: 20px;
-
-
+    font-size: 15px;
 
 }
 
-.category-title::before {
+.cat-title::before {
     content: '••••';
     color: transparent;
     background-color: var(--idColor);
@@ -270,6 +314,16 @@ button {
 #id37 { color: goldenrod; }
 
 
+.gral-container {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:  30px 25px;
+
+}
+
 .gral-container .movie-container  {
 
     display: inline-block;
@@ -285,6 +339,7 @@ button {
 
   /* Movie Detail */
 .movieInfo-container {
+
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
     padding: 32px 24px;
@@ -296,6 +351,7 @@ button {
   }
   
   .movieInfo-title {
+  
     display: inline-block;
     width: 80%;
     margin: 0 0 16px 0;
@@ -307,6 +363,7 @@ button {
     text-align: right;
     width: 18%;
     font-weight: var(--font-weight-title2);
+    
   }
   .movieRating::before {
     content: '★';
@@ -318,16 +375,19 @@ button {
     margin: 0 0 24px 0;
   }
   
-  .relatedMovies-container {
+  .related__Movies-container {
+  
     margin-top: 24px;
     height: 216px;
   }
   
-  .relatedMovies-title {
+  .related__Movies-title {
+  
     margin-bottom: 16px;
   }
   
-  .relatedMovies-scrollContainer {
+  .relatedMovies-container__scroll {
+  
     position: absolute;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -336,22 +396,26 @@ button {
     padding-bottom: 16px;
   }
   
-  .relatedMovies-scrollContainer .movie-container {
+  .relatedMovies-container__scroll .movies-container {
+  
     display: inline-block;
     margin-right: 8px;
   }
   
-  .relatedMovies-scrollContainer .movie-img {
+  .relatedMovies-container__scroll .movie-img .movie-pic {
+  
     width: 125px;
     min-width: 125px;
     max-width: 125px;
     height: 187.5px;
     min-height: 187.5px;
     max-height: 187.5px;
+    
   }
   
   /* Footer */
   footer {
+  
     background-color: var(--aux-brown);
     color: coral ;
     text-align: center;
@@ -361,9 +425,11 @@ button {
     align-items: center;
   }
   
-  /* Navigation
-  .inactive {
+  /* Navigation  */
+  
+  /* .inactive {
+  
     display: none;
 
-}
- */
+} */
+

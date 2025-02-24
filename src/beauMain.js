@@ -39,7 +39,7 @@ async function getrendingMovies( ) {
 
         movies.forEach(movie => {
 
-            const trendingFilmContainer = document.querySelector('#trendingFilms .trendingFilm-movieList'); // Make sure these selectors are correct
+            const trendingFilmContainer = document.querySelector('#trendingFilms .trending__Film-movieList'); // Make sure these selectors are correct
             if (trendingFilmContainer) { // Check if the container exists before adding movies
 
                 const movieContainer = document.createElement('div');

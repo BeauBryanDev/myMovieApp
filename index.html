@@ -17,7 +17,7 @@
 
         <form id="searchForm" class="header-search--form" >
             <input type="text" placeholder="Advengers"/>
-            <button>Search </button>
+            <button class="search-button">Search </button>
 
         </form>
     </header>
@@ -25,10 +25,10 @@
     <section id="trendingFilms" class="trendingFilm-container">
         <div class="trendingFilms-header">
             <h2 class="trendingFilm-title">Trending </h2>
-            <button class="trendingFilm-btn">See More Films</button>
+            <button class="trending__Film-btn">See More Films</button>
         </div>
 
-        <article class="trendingFilm-movieList">
+        <article class="trending__Film-movieList">
 
             <div class="movie-container">
                 <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg"
@@ -60,39 +60,17 @@
         <h2 class="filmCats-title">Films Categories </h2>
 
         <article class="categories-list">
-            <div class="cat-container">
-                <h3 id="actionFilms" class="cat-title">
-                    Action
-                </h3>
-            </div>
 
-            <div class="cat-container">
+            <!-- <div class="cat-container">
                 <h3 id="sci-fi-films" class="cat-title">
                     Sci-Fi
                 </h3>
-            </div>
-            <div class="cat-container">
-                <h3 id="fantasyFilms" class="cat-title">
-                    Fantasy
-                </h3>
-            </div>
-            <div class="cat-container">
-                <h3 id="comedyFilms" class="cat-title">
-                    Comedy
-                </h3>
-            </div>
-            <div class="cat-container">
-                <h3 id="dramaFilms" class="cat-title">
-                    Drama
-                </h3>
-            </div>
-            <div class="cat-container">
-                <h3 id="horrorFilms" class="cat-title">
-                    Horror
-                </h3>
-            </div>
+            </div> -->
 
+       
         </article>
+
+    </section>
 
         <section id="gral-list" class="gral-container inactive" >
 
@@ -166,28 +144,28 @@
         </article>
 
 
-        <article class="relatedMovies-container">
+        <article class="related__Movies-container">
 
-            <h2 class="relatedMovies-title">
+            <h2 class="related__Movies-title">
                 Similar Films 
             </h2>
 
-            <div class="relatedMovies-container--scroll">
-                <div class="movies-containeer">
+            <div class="relatedMovies-container__scroll">
+                <div class="movies-container">
                     <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lurEK87kukWNaHd0zYnsi3yzJrs.jpg" 
                     class="movie-img"
                     alt="Mufasa the Little Lyon king"
                     />
                 </div>
 
-                <div class="movies-containeer">
+                <div class="movies-container">
                     <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lurEK87kukWNaHd0zYnsi3yzJrs.jpg" 
                     class="movie-img"
                     alt="Mufasa the Little Lyon king"
                     />
                 </div>
 
-                <div class="movies-containeer">
+                <div class="movies-container">
                     <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lurEK87kukWNaHd0zYnsi3yzJrs.jpg" 
                     class="movie-img"
                     alt="Mufasa the Little Lyon king"
@@ -202,11 +180,12 @@
     <footer> Films Web App </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
     <script type="module" src="./src/beauMain.js"></script>
+
 
 </body>
 </html>
-
 
 
 <!--
