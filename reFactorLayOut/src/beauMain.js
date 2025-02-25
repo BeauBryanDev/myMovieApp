@@ -110,6 +110,8 @@ async function getFilmCat() {
 }
 
 
-getrendingMovies( ) ;
-getFilmCat() ;
+getrendingMovies();
+getFilmCat();
+
+
 
