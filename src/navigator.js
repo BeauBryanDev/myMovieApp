@@ -33,6 +33,9 @@ function myNavigator()  {
 function homePage()  {
 
     console.log("Home!");
+    getrendingMovies( ) ;
+    getFilmCat() ;
+
     
 }
 
