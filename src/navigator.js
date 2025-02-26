@@ -1,5 +1,7 @@
 //Navigator Script  ....
 //window.addEventListener('loaded', navigator , false );
+import { getrendingMovies, getFilmCat } from './beauMain.js';
+//import these tow function from BeauMain.js ....
 window.addEventListener('DOMContentLoaded', myNavigator , false );
 window.addEventListener('hashchange', myNavigator , false );
 

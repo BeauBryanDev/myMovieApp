@@ -1,4 +1,5 @@
 import { API_KEY  } from   "./secrects.js";
+import { } from './nodes.js';
 
 // console.log("API_KEY: "+ API_KEY );
 
@@ -14,7 +15,7 @@ const api = axios.create( {
     baseURL:  'https://api.themoviedb.org/3/',
     headers : {
         'Content-Type' :  'application/json;charset=utf-8',
-                          
+                        
     },
     params : {
         'api_key': API_KEY,
@@ -23,7 +24,7 @@ const api = axios.create( {
 });
 
 
-async function getrendingMovies( ) {
+export async function getrendingMovies( ) {
 
     // const trendings = await fetch( MOVIES_URL + API_KEY );
 
@@ -70,7 +71,7 @@ async function getrendingMovies( ) {
 }
 
 
-async function getFilmCat() {
+export async function getFilmCat() {
 
     // const  cats  = await fetch( GENRES_URL + API_KEY )  ;
     // const  catData = await cats.json();
@@ -110,6 +111,4 @@ async function getFilmCat() {
 }
 
 
-getrendingMovies( ) ;
-getFilmCat() ;
 
