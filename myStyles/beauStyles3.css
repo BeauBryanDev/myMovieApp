@@ -603,7 +603,7 @@ form svg {
     flex-wrap: wrap;
   }
 
-  #id28 { --idColor: var(--yellow); }
+#id28 { --idColor: var(--yellow); }
 #id12 { --idColor: var(--red); }
 #id16 { --idColor: var(--green); }
 #id35 { --idColor: var(--lightBlue); }
@@ -637,7 +637,7 @@ form svg {
     /* display: inline-block; */
     width: 200px;
     margin: 0;
-    height: ;
+    height:250px ;
   }
   
   .genericList-container .movie-img {
