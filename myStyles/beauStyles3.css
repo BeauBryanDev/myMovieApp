@@ -7,7 +7,7 @@
     --lighter-blue: #1e2146;
     --blue: #0074a6;
     --highlight-blue: #2b4852;
-    --gray: rgb(52, 58, 70);
+    --gray: rgb(52, 56, 61);
     --lightGrey: rgb(227,227,227);
     --scrollbarGray: rgb(134, 134, 134);
 
@@ -15,10 +15,10 @@
     --green: #CAD297;
     --aqua: #B7EAC5;
     --lightBlue: #A2EEE5;
-    --darkBlue: #8EA2EA;
+    --darkBlue: #1a2755;
     --red: #F09D9D;
     --purple-dark-1: #3E0F64;
-    --purple-medium-1: #AA83C8;
+    --purple-medium-1: #28649c;
 
 
     --tw-ring-offset-shadow: 0 0 #0000;
@@ -603,7 +603,7 @@ form svg {
     flex-wrap: wrap;
   }
 
-  #id28 { --idColor: var(--yellow); }
+#id28 { --idColor: var(--yellow); }
 #id12 { --idColor: var(--red); }
 #id16 { --idColor: var(--green); }
 #id35 { --idColor: var(--lightBlue); }
@@ -637,7 +637,7 @@ form svg {
     /* display: inline-block; */
     width: 200px;
     margin: 0;
-    height: ;
+    height:250px ;
   }
   
   .genericList-container .movie-img {

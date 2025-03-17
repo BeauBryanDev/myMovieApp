@@ -38,12 +38,22 @@ function createLanguages() {
 createLanguages();
 
 async function getWords() {
-	let langWords = localStorage.getItem('lang');
-    let [langWord, ] = langWords.split('-');
-    console.log(langWord);
-	const languageTexts = await fetch('./lang.json');
-	const data = await languageTexts.json();
-	return data[langWord];
+    try {
+        let langWords = localStorage.getItem('lang');
+        let [langWord, ] = langWords.split('-');
+        console.log(langWord);
+        const localUrl  = './src/lang.json';  // Ensure this path is correct
+        console.log('Fetching from URL:', localUrl);
+        const response = await fetch( localUrl );
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        return data[langWord];
+    } catch (error) {
+        console.error('Failed to fetch language file:', error);
+        return {};
+    }
 }
 
 async function setDefaultLang() {
